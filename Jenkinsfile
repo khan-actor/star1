@@ -1,10 +1,10 @@
 pipeline {
 	agent any 
-	parameters {
+	
 		triggers {
   pollSCM '*/5 * * * *'
 }
-	}
+	
 	stages {
 	    stage('Checkout') {
 	        steps {
